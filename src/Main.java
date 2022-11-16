@@ -38,6 +38,14 @@ public class Main {
         }
         double averageSum = total / arr.length;
         System.out.println(averageSum);
+
+        // Задача 4
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        String result = "" ;
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            result += reverseFullName[i];
+        }
+        System.out.println(result);
     }
 
 }
