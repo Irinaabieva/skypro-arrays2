@@ -30,6 +30,14 @@ public class Main {
             }
         }
         System.out.println("Минимальная сумма трат за день составила " + minSpending + " рублей. Максимальная сумма трат за день составила " + maxSpending + " рублей");
+
+        // Задача 3
+        double total = 0;
+        for (int i = 0; i < arr.length; i++) {
+            total += arr[i];
+        }
+        double averageSum = total / arr.length;
+        System.out.println(averageSum);
     }
 
 }
