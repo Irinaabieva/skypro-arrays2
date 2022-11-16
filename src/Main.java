@@ -17,6 +17,19 @@ public class Main {
             sum += arr[i];
         }
         System.out.println("Сумма затрат за месяц составила " + sum + " рублей");
+
+        // Задача 2
+        int maxSpending = 0;
+        int minSpending = 200000;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > maxSpending) {
+                maxSpending = arr[i];
+            }
+            if (arr[i] < minSpending) {
+                minSpending = arr[i];
+            }
+        }
+        System.out.println("Минимальная сумма трат за день составила " + minSpending + " рублей. Максимальная сумма трат за день составила " + maxSpending + " рублей");
     }
 
 }
